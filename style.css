@@ -125,4 +125,93 @@ footer {
     .menu-toggle {
         display: block;
     }
+
+}
+/* ===============================
+   MOBILE RESPONSIVE SETTINGS
+   =============================== */
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Flexible container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Responsive Headings */
+h1 {
+    font-size: clamp(26px, 6vw, 48px);
+}
+
+h2 {
+    font-size: clamp(20px, 5vw, 32px);
+}
+
+p {
+    font-size: clamp(14px, 4vw, 18px);
+}
+
+/* Buttons responsive */
+button,
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Navigation mobile layout */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero h1 {
+        padding: 15px;
+    }
+
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
 }
