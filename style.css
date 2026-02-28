@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8e7;
+    color: #333;
+}
+section {
+    padding: 20px 5% ; /* Adds 40px space top/bottom, and 10% space on the sides */
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff8e7;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* HERO */
+header {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content p {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* OVAL HEADINGS */
+.oval-heading {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 2px solid #c89b3c;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    background-color: #f3e5c8;
+}
+
+/* PRODUCTS */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 0 40px;
+}
+
+.product-grid div {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #c89b3c;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background-color: #c89b3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #a87f2f;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #fff8e7;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
